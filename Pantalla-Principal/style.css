@@ -1,0 +1,144 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+}
+
+header {
+    background-color: #3a8f3a;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav {
+    background-color: #2d6b2d;
+    padding: 0.5em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    position: relative;
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #3a8f3a;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+    min-width: 180px;
+    z-index: 1;
+    text-align: left;
+}
+
+nav li:hover .dropdown {
+    display: block;
+}
+
+.dropdown li {
+    padding: 5px 10px;
+    color: #3a8f3a;
+    white-space: nowrap;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 40vh;
+    background-image: url('hero-imagen.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto; /* Altura automática para ajustarse al contenido */
+    padding: 1em;
+    margin-bottom: 2em; /* Espacio entre el contenedor y el pie de página */
+}
+
+.section {
+    background-color: white;
+    margin: 1em;
+    padding: 1.5em;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+.section:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    color: #3a8f3a;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    background-color: #3a8f3a;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+    width: 100%;
+}
+
+.social img {
+    width: 30px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
